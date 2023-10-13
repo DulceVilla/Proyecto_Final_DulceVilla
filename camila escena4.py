@@ -124,6 +124,7 @@ Rect(246,229,40,25,fill="grisTurbio"),
 pala1=Group(Linea(241,205,253,220,fill="marrón"),
     RegularPolygon(253,220,7,3,rotarÁngulo=+15,fill="gris",borde="negro",anchuraDeBorde=1))
     
+cmu_graphics.run()
 
     
     
