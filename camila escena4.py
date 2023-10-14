@@ -90,6 +90,7 @@ Circle(64,62,10,fill="green")
 Circle(62,73,10,fill="green")
 Circle(74,58,10,fill="green")
 Circle(73,65,10,fill="green")
+
 carretilla=Group(
 Circle(182,135,5,fill=None,borde="negro"),
 Polygon(168,112,185,108,191,124,187,132,fill="plateado",borde="negro"),
@@ -97,13 +98,14 @@ Polygon(168,112,165,116,182,136,187,132),
 Line(170,112,163,100,fill="marrón"),
 Linea(180,110,172,95,fill="marrón")
 )
-Circle(161,84,5)
-Line(161,84,161,104)
-Line(159,88,172,95)
-Line(159,88,163,100)
-Line(161,104,168,116)
+persona2=Group(
+Circle(161,84,5),
+Line(161,84,161,104),
+Line(159,88,172,95),
+Line(159,88,163,100),
+Line(161,104,168,116),
 Line(161,104,155,115)
-
+)
 #personitas
 persona1=Group(
     Circulo(230,188,5),
@@ -124,6 +126,7 @@ Polygon(154,225,165,225,172,236,154,236,fill="grisTurbio",borde="negro"),
 Circle(173,255,8,fill="grisTurbio",borde="negro"),
 Circle(115,256,8,fill="grisTurbio",borde="negro"),
 Line(150,243,142,235))
+
 cemento=Group(
 Oval(268,231,30,40,fill="plateado"),
 Rect(246,229,40,25,fill="grisTurbio"),
@@ -131,6 +134,30 @@ Rect(246,229,40,25,fill="grisTurbio"),
 #palas
 pala1=Group(Linea(241,205,253,220,fill="marrón"),
     RegularPolygon(253,220,7,3,rotarÁngulo=+15,fill="gris",borde="negro",anchuraDeBorde=1))
+def enTeclaPresionada(tecla):
+    if tecla=="espacio":pala1.centroX+=2
+    
+def enTeclaSoltada(tecla):
+    if cemento.opacidad>=5:
+        cemento.opacidad-=5
+    
+    if tecla=="espacio":
+        pala1.centroX-=2
+        if carretilla.centroY <=200:
+            persona2.centroX+=4
+            persona2.centroY+=4
+            carretilla.centroX+=4
+            carretilla.centroY+=4
+            
+        while carretilla.centroY>199:
+            carretilla.centroY=115
+            carretilla.centroX=159
+            persona2.centroX=148
+            persona2.centroY=96
+            cemento.opacidad+=100
+            
+    
+
     
 cmu_graphics.run()
 
