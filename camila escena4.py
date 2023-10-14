@@ -107,12 +107,12 @@ Line(161,104,155,115)
 #personitas
 persona1=Group(
     Circulo(230,188,5),
-    Line(230,188,230,213),
-    Line(230,213,224,225),
-    Line(230,213,236,225),
-    Line(230,197,219,205),
+    Line(230,188,230,213)
+    Line(230,213,224,225)
+    Line(230,213,236,225)
+    Line(230,197,219,205)
     Line(230,197,241,205)
-        )
+    
         
 maquina=Group(
 Oval(130,227,24,29,rotarÁngulo=-26,fill=gradiente("grisClaro","amarillo","oro",inicio="izquierda"),borde="negro"),
