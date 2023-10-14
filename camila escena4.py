@@ -54,6 +54,13 @@ Oval(263,29,8,7,fill="oro")
 Line(295,160,298,107,anchuraDeLinea=4)
 Line(298,107,288,107)
 Oval(291,110,8,7,fill="oro")
+Line(43,357,37,304,anchuraDeLinea=4)
+Line(37,304,47,304)
+Ovalo(45,308,8,7,fill="oro")
+Line(69,265,65,218,anchuraDeLinea=4)
+Line(65,218,75,218)
+Oval(73,222,8,7,fill="oro")
+
 #banca
 Line(67,172,70,184)
 Line(55,172,59,182)
