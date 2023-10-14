@@ -1,4 +1,5 @@
-from cmu_graphics import*
+from cmu_graphics import *
+
 app.fondo="grisOscuro"
 
 #carretera
@@ -72,7 +73,7 @@ Rect(40,144,50,8,rotarÁngulo=-60,fill="naranjaMarrón")
 Rect(50,150,50,8,rotarÁngulo=-60,fill="naranjaMarrón")
 
 #arboles
-Linea(48,236,34,201,anchuraDeLinea=10,fill="marrón")
+Line(48,236,34,201,anchuraDeLinea=10,fill="marrón")
 Circle(15,191,10,fill="green")
 Circle(26,196,10,fill="green")
 Circle(38,192,10,fill="green")
@@ -81,7 +82,7 @@ Circle(38,175,10,fill="green")
 Circle(25,165,10,fill="green")
 Circle(13,175,10,fill="green")
 
-Linea(101,122,85,83,anchuraDeLinea=10,fill="marrón")
+Line(101,122,85,83,anchuraDeLinea=10,fill="marrón")
 Circle(73,79,10,fill="green")
 Circle(87,75,10,fill="green")
 Circle(84,64,10,fill="green")
@@ -106,11 +107,11 @@ Line(161,104,155,115)
 #personitas
 persona1=Group(
     Circulo(230,188,5),
-    Linea(230,188,230,213),
-    Linea(230,213,224,225),
-    Linea(230,213,236,225),
-    Linea(230,197,219,205),
-    Linea(230,197,241,205)
+    Line(230,188,230,213),
+    Line(230,213,224,225),
+    Line(230,213,236,225),
+    Line(230,197,219,205),
+    Line(230,197,241,205)
         )
         
 maquina=Group(
